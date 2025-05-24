@@ -1,0 +1,116 @@
+body
+{
+    font-family: "Pixelify Sans", sans-serif;
+}
+header
+{
+    background-color: #505075;
+    padding-top: 1rem;
+    text-align: center;
+}
+header h1
+{
+    color: #FFF;
+    font-size: 1.8rem;
+}
+header strong
+{
+    font-size: 1.6rem;
+    color: #F5CF2C;
+}
+nav {
+	background-color: #47B1C8;
+	max-width: 100%;
+}
+nav ul {
+	list-style-type: none;
+}
+nav a {
+	display: block;
+	color: #000;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: #F5CF2C;
+    color: #000;
+}
+.active {
+	color: #F5CF2C;
+}
+@media (min-width: 640px) 
+{
+	nav ul {
+		display: flex;
+	}
+
+	nav ul li {
+		flex: 1 0 auto; 
+    }
+}
+
+main
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.sam
+{
+    width: 20%;
+    float: right;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bol
+{
+    width: 20%;
+    float: left;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main h2
+{
+    color: #FFF;
+    font-size: 1.4rem;
+    padding: 20px;
+    margin: 0;
+    background-color: #505075;
+}
+
+main p
+{
+    padding: 15px;
+    text-align: justify;
+}
+
+.card
+{
+    border-radius: 10px;
+    border: #505075 solid 2px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card ul
+{
+    display: flex;
+    flex-direction: column;
+}
+
+footer
+{
+    background-color: #505075;
+    color: #FFF;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
